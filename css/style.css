@@ -67,14 +67,28 @@ header {
 	text-align:right;
 	margin:10px 0 0 0;
 	}
-
+.menu li {
+	display:inline-block;
+	vertical-align:top;
+	margin:0 10px;
+	}
+.menu__active {
+	display:none;
+	color:#fff; 
+	font:24px 'LeagueGothic'; 
+	padding:0 5px;
+	border-bottom:2px solid #edbfff;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.4);
+	text-transform:uppercase;
+	}
 .menu__link { 
 	color:#fff; 
 	font:24px 'LeagueGothic'; 
-	padding:0 20px;
+	padding:0 5px;
 	border-bottom:2px solid transparent;
 	text-shadow:1px 1px 1px rgba(0,0,0,0.4);
 	text-transform:uppercase;
+	transition: 0.2s;
 	}
 .menu__link:hover {
 	border-bottom:2px solid #edbfff;
@@ -132,6 +146,7 @@ section { padding:50px 0;}
 .content-txt__item h2 {
 	position:relative;
 	font:30px 'LeagueGothic';
+	text-transform:uppercase;
 	}	
 .content-txt__item p {
 	font-size:16px;
@@ -149,7 +164,9 @@ section { padding:50px 0;}
 .content-txt__item a:hover {
 	text-shadow:0px 0px 3px rgba(255,255,255,1);
 	}
-.content-txt__item .deco-icon {
+fieldset { border:none; position:relative;}
+/*legend { position:absolute; margin:0px 0 0 -30px;}*/
+legend.deco-icon {
 	position:absolute; 
 	top:0; 
 	left:-40px;
@@ -178,12 +195,17 @@ section { padding:50px 0;}
 .left-column {
 	background:#fff;
 	}
-	
+.left-column legend,
+.right-column legend {
+	position:absolute;
+	margin:0 0 0 -55px;
+	}	
 .left-column h3,
 .right-column h3 {
 	font:30px 'LeagueGothic';
 	text-transform:uppercase;
 	position:relative;
+	text-transform:uppercase;
 	}
 .left-column .author {
 	position:absolute;
@@ -197,7 +219,7 @@ section { padding:50px 0;}
 .right-column { padding-right:0;}
 .right-column a { font-weight:700; color:#454545;}
 .right-column p { font-weight:300;}
-.right-column li { margin:0 0 5px 0;}
+.right-column li { margin:0 0 15px 55px;}
 
 .more { font:18px 'LeagueGothic'; text-transform: uppercase; text-align:right; display:block;}
 
@@ -252,11 +274,7 @@ footer .menu {
 	z-index:1;
 	border-radius:50%;
 	background:rgba(0,0,0,0.5);
-	box-shadow:0 1px 5px rgba(0, 0, 0, 0),
-	0 1px 5px rgba(0, 0, 0, 0),
-	0 0px 3px 1px rgba(0, 0, 0, 0.6),
-	0 1px 5px rgba(0, 0, 0, 0);
-	
+	box-shadow:0 0px 3px 1px rgba(0, 0, 0, 0.2);	
 	}
 
 
