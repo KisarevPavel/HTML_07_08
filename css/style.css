@@ -147,6 +147,16 @@ section { padding:50px 0;}
 	position:relative;
 	font:30px 'LeagueGothic';
 	text-transform:uppercase;
+	}
+.content-txt__item .big {
+	font-size:48px;
+	}
+.content-txt__item .big span {
+	color:#b9b9b9;
+	}
+.content-txt__item .copyright {
+	color:#c5c5c5;
+	font:italic 16px 'Georgia';
 	}	
 .content-txt__item p {
 	font-size:16px;
